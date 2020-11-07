@@ -55,20 +55,20 @@ if($haha == ""){
  <div class="container" style="text-align:center;">
         <div class="col-md-12">
             <h1 class="margin-bottom-15">上次结果</h1>
-	<p>你输入的单词：
+	<p>The word you typed in：
 	<?php
 	print($wordname);
 	?>
 	</p>
 	<br>
-	<p>它的中文意思是：</p>
+	<p>It's literal meaning in Chinese：</p>
 	<?php
 	print($haha);
 	
 	
 	?>
 	<br><br>
-	<p>感谢有道词典提供词库支持</p>
+	<p>Sincerely appreciate the vocabulary resources provided by Youdao dictionary</p>
 	</div>
 	</div>
 	
@@ -78,7 +78,7 @@ if($haha == ""){
         mysql_query("set names 'utf8'");
 
         if (!$con) {  
-            die('数据库连接失败'.$mysql_error());  
+            die('Failed to connect to server'.$mysql_error());  
         }  
         mysql_select_db("xdm447914479_db",$con);  
 			mysql_query("set names 'utf8'");
@@ -371,11 +371,11 @@ if($haha == ""){
 
     <div class="container">
         <div class="col-md-12">
-            <h1 class="margin-bottom-15">请查词</h1>
+            <h1 class="margin-bottom-15">Please search the word</h1>
             <form class="form-horizontal templatemo-forgot-password-form templatemo-container" role="form" action="word.php" method="post">
                 <div class="form-group">
                     <div class="col-md-12">
-                        请输入英文单词
+                        Please type in an English word
                     </div>
                 </div>
                 <div class="form-group">
@@ -385,15 +385,15 @@ if($haha == ""){
                 </div>
                 <div class="form-group">
                     <div class="col-md-12">
-                        <label>公告:还在内测阶段，可能出现BUG！在国外使用会有1-2秒的查询延迟 </label>
+                        <label>Announcement: Program still in testing phase, and some unexpected bugs may be encountered, and there will be a delay of 1-2 seconds if accessing outside of China</label>
 
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col-md-12">
-                        <input type="submit" onclick="showMask();" value="提交" class="btn btn-danger" />
+                        <input type="submit" onclick="showMask();" value="Submit" class="btn btn-danger" />
                         <br /><br />
-                        <a href="index.html">退出登录</a>
+                        <a href="index.html">Exit</a>
                         <div id="alert" style="display:none; text-align:center; "><span class="ld ld-ring ld-spin" style="font-size:300%;"></span></div>
                     </div>
                 </div>
